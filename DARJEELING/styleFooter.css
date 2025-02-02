@@ -13,6 +13,8 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    margin-left:-2.8vw;
+    margin-right:-2.8vw;
 }
 
 .footpanel2 {
@@ -24,6 +26,8 @@ footer {
     flex-wrap: wrap;
     padding: 20px 5%; /* Added padding for better spacing */
     align-items: flex-start;
+    margin-left:-2.8vw;
+    margin-right:-2.8vw;
 }
 
 .footpanel3 {
@@ -96,6 +100,8 @@ ul p {
     font-size: 0.8rem;
     text-align: center;
     padding: 1px;
+    margin-left:-2.8vw;
+    margin-right:-2.8vw;
 }
 
 .pages {
