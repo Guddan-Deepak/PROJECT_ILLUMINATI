@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to right, rgb(0, 213, 255), rgb(0, 187, 255));
+    background:linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
     padding: 20px;
 }
 .content-container{
