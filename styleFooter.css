@@ -6,7 +6,7 @@ footer {
 }
 
 .footpanel1 {
-    background-color: #E7D6BC;
+    background-color: #a2d2e5;
     color: rgb(47, 15, 15);
     height: 30px;
     display: flex;
@@ -16,9 +16,9 @@ footer {
 }
 
 .footpanel2 {
-    background-image: url("footer_images/footer.jpg");
+    background-image: url("footer_images/footer.png");
     background-size: cover;
-    color: rgb(84, 11, 11);
+    color: rgb(45, 46, 4);
     display: flex;
     justify-content: space-between; /* Adjusted to align logo and links side by side */
     flex-wrap: wrap;
@@ -80,7 +80,7 @@ ul a {
     display: block;
     font-size: 0.9rem;
     margin-top: 10px;
-    color: #bac949;
+    color: #687027;
     text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ ul p {
 }
 
 .footpanel4 {
-    background-color: #64430a;
+    background-color: #0c3334;
     color: white;
     font-size: 0.8rem;
     text-align: center;
@@ -129,7 +129,7 @@ ul p {
 
 .footer-links-1 a,
 .footer-links-2 a {
-    color: #671e24;
+    color: #f0cf13;
     text-decoration: none;
     margin: 5px 0; /* Adds vertical spacing */
 }
