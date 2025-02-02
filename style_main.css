@@ -4,8 +4,9 @@
     overflow: hidden; /* Hide overflow */
     position: relative; /* For positioning content over the video */
     border: 2px solid #3d0505;
+    border-radius: 2%;
+    
 }
-
 .video video {
     width: 100%; 
     height: 100%; 
@@ -14,17 +15,96 @@
     top: 0;
     left: 0;
     z-index: -1; 
+    background:linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
+}
+/*FLOATING TABS*/
+
+.floating{
+    background: linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
+    padding: 10px;
+}
+.block strong{
+    font-size: larger;
+    font-family: cursive;
+}
+.block p{
+    font-family: cursive;
+    font-size: large;
+}
+.view{
+    display: inline;
+    overflow: hidden;
+}
+
+.block{
+    margin-left: 50px;
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(87, 9, 9);
+    background: rgba(201, 99, 99, 0.7);
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(48, 9, 9);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+@keyframes appear{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes appearRight {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.block:first-child{
+    animation: appearRight 1s forwards;
+    animation-delay: 0.2s;
+}
+
+.block:nth-child(odd){
+    animation: appear 1s forwards;
+    animation-delay: 0.4s;
+}
+
+.block:nth-child(even){
+    animation: appearRight 1s forwards;
+    animation-delay: 0.4s;
+}
+
+.block:nth-child(odd), .block:nth-child(even){
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 /* Slider - option */
 .slider{
-    background-color: #eac290
+    background:linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
 }
 .slider h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-weight: 800;
     color: #fff;
     display: flex;
+    font-size: 5rem;
     justify-content: center;
     padding: 20px;
 }
@@ -41,7 +121,13 @@
     align-items: center;
     justify-content: center;
     border-radius:8px;
+    cursor:pointer;
+    overflow: hidden;
     border: 1px solid rgba(255,255,255,0.5);
+}
+.card-list .card-items:hover {
+    transform: scale(1.05); 
+    transition: ease-in-out 0.5s;
 }
 
 #card-items1{
@@ -88,18 +174,62 @@ h2{
     font-weight: bolder;
 }
 
+.text-changer {
+    padding: 40px 20px;
+    background:linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
+
+}
+
+.text-changer-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1a2732;
+    font-family: cursive;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-box p {
+    font-style: italic;
+    font-family: cursive;
+    color: #3d0505;
+    max-width: 800px;
+    font-size: larger;
+}
+
+.text-changing {
+    font-size: 60px;
+    font-family: cursive;
+    font-variant:normal;
+    font-weight: bold;
+    color: #064347;
+    margin-top: 20px;
+    height: 30px;
+}
 
 /* FAQ Section */
 .faq {
     padding: 40px 12%;
     text-align: center;
-    background-color: #eac290; 
+    background:linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
 }
 .faq h2 {
     font-weight: 500;
     font-size: 40px;
+    font-family: cursive;
     margin-bottom: 30px;
-    color: #971313;
+    color: #031c34;
+}
+h2{
+    text-decoration: underline;
 }
 
 .FAQs {
@@ -120,7 +250,7 @@ h2{
     padding: 20px;
     font-size: 18px;
     font-weight: 500;
-    background: #8f3606;
+    background: linear-gradient(to right, #FF5733, #FFABAB, #FF5733);
     color: #fff; 
     margin-bottom: 2px;
     cursor: pointer;
@@ -146,9 +276,10 @@ input[type="radio"] {
 }
 
 .FAQs .content {
-    background: #d4c27a; /* Light background for content */
-    color: #3d0505; /* Dark text for readability */
+    background: #d4d1c1; 
+    color: #4c5090; 
     text-align: left;
+    font-family:cursive; 
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
