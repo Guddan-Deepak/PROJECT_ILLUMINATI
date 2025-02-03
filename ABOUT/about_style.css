@@ -35,9 +35,10 @@
   margin-left:100px;
 }
 .image-container {
+  background-image:url("about_image.jpg");
+  background-size:cover;
   flex:1;
- 
-  display:flex;
+ display:flex;
   justify-content: center;
   align-items:center;
   flex-direction:column;
