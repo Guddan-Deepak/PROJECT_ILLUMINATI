@@ -13,8 +13,7 @@
   display: flex;
   justify-content:space-evenly;
   align-items: center;
-  margin-left: -2.8vw;
-  margin-top: -2.6vh;  
+   
 }
 
 .upbox img{
@@ -28,7 +27,7 @@
   background-color:#699bd7;
   align-items: center;
   justify-content:space-evenly;
-   margin-left: -2.8vw;
+   
   
 }
 
