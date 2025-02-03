@@ -1,0 +1,61 @@
+body {
+    font-family:cursive;
+    background-image: url('hotel/hotelbooking.jpeg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hotel-booking-page {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.booking-container {
+    width: 100%;
+
+}
+
+h1 {
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-grouplabel {
+    display:block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
