@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="flights.css">
+</head>
+<body>
+    <div class="flight-booking-page">
+        <div class="booking-container">
+            <h1>Welcome to TRIPIX Flight Booking</h1>
+            <form id="flight-booking-form">
+                <div class="form-group">
+                    <label for="departure">Departure City:</label>
+                    <select id="departure" name="departure">
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="pune">Pune</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="goa">Goa</option>
+                        <option value="coimbatore">Coimbatore</option>
+                        <option value="lucknow">Lucknow</option>
+                        <option value="bhopal">Bhopal</option>
+                        <option value="patna">Patna</option>
+                        <option value="indore">Indore</option>
+                        <option value="guwahati">Guwahati</option>
+                        <option value="visakhapatnam">Visakhapatnam</option>
+                        <option value="trivandrum">Trivandrum</option>
+                        <option value="nagpur">Nagpur</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="varanasi">Varanasi</option>
+                        <option value="bhubaneswar">Bhubaneswar</option>
+                        <option value="dehradun">Dehradun</option>
+                        <option value="madurai">Madurai</option>
+                        <option value="srinagar">Srinagar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination City:</label>
+                    <select id="destination" name="destination">
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="pune">Pune</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="goa">Goa</option>
+                        <option value="coimbatore">Coimbatore</option>
+                        <option value="lucknow">Lucknow</option>
+                        <option value="bhopal">Bhopal</option>
+                        <option value="patna">Patna</option>
+                        <option value="indore">Indore</option>
+                        <option value="guwahati">Guwahati</option>
+                        <option value="visakhapatnam">Visakhapatnam</option>
+                        <option value="trivandrum">Trivandrum</option>
+                        <option value="nagpur">Nagpur</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="varanasi">Varanasi</option>
+                        <option value="bhubaneswar">Bhubaneswar</option>
+                        <option value="dehradun">Dehradun</option>
+                        <option value="madurai">Madurai</option>
+                        <option value="srinagar">Srinagar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" name="departure-date">
+                </div>
+                <div class="form-group">
+                    <label for="return-date">Return Date (Optional):</label>
+                    <input type="date" id="return-date" name="return-date">
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" value="1">
+                </div>
+                <button type="button" id="submit-btn">Search Flights</button>
+            </form>
+        </div>
+    </div>
+    <script src="flights.js"></script>
+</body>
+</html>
