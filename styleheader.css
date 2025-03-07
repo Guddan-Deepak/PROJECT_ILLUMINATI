@@ -114,8 +114,10 @@ a:hover {
   top: 79px;
   height: 50%;
   width: 250px;
-  background:linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
+  /* background:linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF); */
   transition: left 0.3s ease-in-out;
+  background: #232121 ;
+  opacity: 80%;
   z-index: 10;
   padding-top: 60px;
   box-shadow: 5px 5px 10px 0px #030000;
