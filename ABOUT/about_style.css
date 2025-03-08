@@ -1,78 +1,190 @@
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.wrapper{
+
+/* Wrapper */
+.wrapper {
   position: relative;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.bg-color{
-  width:100%;
-  min-height:100vh;
-  display:flex;
+
+/* Background Styling */
+.bg-color {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
 }
-.bg-1{
-  flex:1;
-  background: rgb(2,0,36);
+
+.bg-1 {
+  flex: 1;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,78,1) 33%, rgba(0,212,255,1) 100%);
 }
 
-
-.about-container{
+/* About Container */
+.about-container {
   width: 85%;
-  min-height:80vh;
-  position:absolute;
-  display:flex;
-  justify-content:center;
+  min-height: 80vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: white;
-  padding:20px;
-  border-radius:5px;
-  margin-top:100px;
-  margin-left:100px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-left: 100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Image Container */
 .image-container {
-  background-image:url("about_image.jpg");
-  background-size:cover;
-  flex:1;
- display:flex;
+  background-image: url("about_image.jpg");
+  background-size: cover;
+  flex: 1;
+  display: flex;
   justify-content: center;
-  align-items:center;
-  flex-direction:column;
-
+  align-items: center;
+  flex-direction: column;
 }
-.image-container img{
 
-  
-  height:500px
-  
+.image-container img {
+  height: 500px;
+  border-radius: 10px;
 }
-.text-container{
-  flex:1;
-  display:flex;
+
+/* Text Container */
+.text-container {
+  flex: 1;
+  display: flex;
   justify-content: center;
-  align-items:center;
-  flex-direction:column;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
 }
 
-.text-container h1{
-  font-size:50px;
-  padding:10px 0px;
+.text-container h1 {
+  font-size: 50px;
+  padding: 10px 0px;
 }
-.text-container p{
-  font-size:22px;
-  padding:10px 0px;
+
+.text-container p {
+  font-size: 18px;
+  padding: 10px 0px;
+  max-height: 150px; /* Default hidden part */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 }
-.text-container a{
-  text-decoration:none;
-  padding:12px;
-  border:2px solid purple;
-  margin-top:30px;
-  background-color:purple;
-  color:white;
-  font-size:20px;
+
+.text-container a {
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 2px solid purple;
+  background-color: purple;
+  color: white;
+  font-size: 18px;
   border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.text-container a:hover {
+  background-color: white;
+  color: purple;
+}
+
+/* Mobile Navigation */
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav ul li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-nav ul li a:hover {
+  color: #0dcaf0;
+}
+
+/* Search Bar */
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.search img {
+  cursor: pointer;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .about-container {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .text-container p {
+    max-height: 100px;
+  }
 }
