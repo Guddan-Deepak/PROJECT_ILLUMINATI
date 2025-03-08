@@ -1,0 +1,120 @@
+/* Festival Section Styling */
+#festival {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #FFDAB9, #87CEEB, #FFFFFF);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    max-width: 90%;
+}
+
+/* Festival Title */
+#festival h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #D84315;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* Labels */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4A148C;
+}
+
+/* Dropdowns & Button */
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+select {
+    background: white;
+    color: #4A148C;
+    border: 2px solid #4A148C;
+}
+
+button {
+    background: #FF5722;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #E64A19;
+}
+
+/* Festival Cards Container */
+#festival-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Festival Cards */
+.festival-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.festival-card:hover {
+    transform: scale(1.05);
+}
+
+/* Festival Name */
+.festival-card h3 {
+    color: #FF5722;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Festival Description */
+.festival-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    select, button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    #festival {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
